@@ -396,12 +396,7 @@
             <groupId>org.apache.james</groupId>
             <artifactId>apache-mime4j-dom</artifactId>
           </exclusion>
-          <!-- Exclude the Commons Compress library as we don't want -->
-          <!-- to parse compressed archives like zips by default.    -->
-          <exclusion>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-compress</artifactId>
-          </exclusion>
+
           <!-- Exclude the ASM library as it's only used for parsing -->
           <!-- Java class files, for which there's typically no need -->
           <!-- in a content repository.                              -->
