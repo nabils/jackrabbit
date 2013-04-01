@@ -43,7 +43,7 @@ public class LazyTextExtractorFieldTest extends AbstractIndexingTest {
 
         ParsingTask task = new ParsingTask(p, val, metadata, Integer.MAX_VALUE) {
             public void setExtractedText(String value) {
-                assertEquals("", value);
+                assertEquals("TextExtractionError", value);
             }
         };
         task.run();
