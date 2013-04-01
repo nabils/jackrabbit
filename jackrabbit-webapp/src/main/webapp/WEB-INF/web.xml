@@ -29,6 +29,14 @@
     </listener>
 
     <!-- ====================================================================== -->
+    <!-- C U S T O M    S E R V L E T S                                         -->
+    <!-- ====================================================================== -->
+    <servlet>
+        <servlet-name>ChangePassword</servlet-name>
+        <servlet-class>org.custom.security.ChangePasswordServlet</servlet-class>
+    </servlet>
+
+    <!-- ====================================================================== -->
     <!-- R E P O S I T O R Y   S T A R T U P  S E R V L E T                     -->
     <!-- ====================================================================== -->
     <servlet>
@@ -381,6 +389,12 @@
     <servlet-mapping>
         <servlet-name>RMI</servlet-name>
         <url-pattern>/rmi</url-pattern>
+    </servlet-mapping>
+
+    
+    <servlet-mapping>
+        <servlet-name>ChangePassword</servlet-name>
+        <url-pattern>/api/changepassword</url-pattern>
     </servlet-mapping>
 
     <!-- ====================================================================== -->
